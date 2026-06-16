@@ -1,0 +1,37 @@
+{
+  "name": "math-x",
+  "version": "1.0.0",
+  "description": "Zero-dependency math utilities: clamping, interpolation, number theory, Roman numerals, base conversion, statistics, and sequences",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "math-x": "./bin.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": ["math", "mathematics", "clamp", "lerp", "interpolation", "prime", "fibonacci", "roman", "numeral", "base-conversion", "statistics", "zero-dependency", "utility"],
+  "author": "sulthonzh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthonzh/math-x.git"
+  },
+  "homepage": "https://github.com/sulthonzh/math-x#readme",
+  "bugs": {
+    "url": "https://github.com/sulthonzh/math-x/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src/",
+    "bin.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
