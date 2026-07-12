@@ -12,9 +12,24 @@
     "math-x": "./bin.js"
   },
   "scripts": {
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm test"
   },
-  "keywords": ["math", "mathematics", "clamp", "lerp", "interpolation", "prime", "fibonacci", "roman", "numeral", "base-conversion", "statistics", "zero-dependency", "utility"],
+  "keywords": [
+    "math",
+    "mathematics",
+    "clamp",
+    "lerp",
+    "interpolation",
+    "prime",
+    "fibonacci",
+    "roman",
+    "numeral",
+    "base-conversion",
+    "statistics",
+    "zero-dependency",
+    "utility"
+  ],
   "author": "sulthonzh",
   "license": "MIT",
   "repository": {
@@ -33,5 +48,11 @@
     "bin.js",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
+  }
 }
